@@ -29,6 +29,7 @@ public class GamePanel extends JPanel implements ActionListener{
 	Timer timer;
 	Random random;
 	Color _coffee_brown = new Color(0x8A624A);
+	Image _coffeeImage = Toolkit.getDefaultToolkit().getImage("coffee.png"); // coffee icon
 	
 	
 	// Game Constructor
@@ -67,7 +68,8 @@ public class GamePanel extends JPanel implements ActionListener{
 			}*/
 			
 			g.setColor(_coffee_brown);
-			g.fillOval(_coffeeX, _coffeeY, UNIT_SIZE, UNIT_SIZE);
+			// Draw coffee
+			g.drawImage(_coffeeImage, _coffeeX, _coffeeY, UNIT_SIZE, UNIT_SIZE, this);
 			
 			// draw snake
 			for(int i = 0; i < _bodyParts; i++) {
