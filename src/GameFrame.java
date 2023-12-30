@@ -1,6 +1,7 @@
 import javax.swing.JFrame;
 
 public class GameFrame extends JFrame{
+	// Whole frame of game
 	GameFrame(){
 		this.add(new GamePanel());
 		this.setTitle("Jake");

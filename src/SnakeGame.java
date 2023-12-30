@@ -2,8 +2,10 @@
 public class SnakeGame {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		// Connect to MongoDB 
+		
+		// Game instance
 		new GameFrame();
 	}
-
 }
